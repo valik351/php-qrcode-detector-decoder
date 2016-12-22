@@ -1,5 +1,7 @@
 <?php
 
+namespace QrReader;
+
 include_once ('Reader.php');
 require_once ('BinaryBitmap.php');
 require_once ('common/detector/MathUtils.php');
