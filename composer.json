@@ -1,6 +1,6 @@
 {
     "name": "valik351/php-qrcode-detector-decoder",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "type": "library",
     "description": "PHP library to detect and decode QR-codes.",
     "keywords": [

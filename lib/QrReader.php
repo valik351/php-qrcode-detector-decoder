@@ -64,7 +64,7 @@ final class QrReader
             switch($sourcetype) {
                 case QrReader::SOURCE_TYPE_FILE:
                     if($isUseImagickIfAvailable && extension_loaded('imagick')) {
-                        $im = new Imagick();
+                        $im = new \Imagick();
                         $im->readImage($imgsource);
                     }else {
                         $image = file_get_contents($imgsource);
@@ -75,7 +75,7 @@ final class QrReader
 
                 case QrReader::SOURCE_TYPE_BLOB:
                     if($isUseImagickIfAvailable && extension_loaded('imagick')) {
-                        $im = new Imagick();
+                        $im = new \Imagick();
                         $im->readimageblob($imgsource);
                     }else {
                         $im = imagecreatefromstring($imgsource);
